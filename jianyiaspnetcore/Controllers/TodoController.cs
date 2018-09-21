@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace jianyiaspnetcore.Controllers
 {
     public class TodoController : Controller
-    {
+    { 
         public IActionResult Index()
         {
             return View();
