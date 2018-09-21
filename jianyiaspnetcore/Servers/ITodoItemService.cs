@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using jianyiaspnetcore.Models;
 
 namespace jianyiaspnetcore.Servers
 {
-    interface ITodoItemService
+    public interface ITodoItemService
     {
+        Task<TodoItem> GetIncompleteItemsAsync();
     }
 }
