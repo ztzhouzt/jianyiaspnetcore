@@ -1,0 +1,31 @@
+﻿@model TodoViewModel
+
+@{
+    ViewData["Title"] = "管理你的待办事项列表";
+}
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">@ViewData["Title"]</div>
+
+    <table>
+        <thead>
+            <tr>
+                <td>&#x2714;</td>
+                <td>Item</td>
+                <td>Due</td>
+            </tr>
+        </thead>
+        @foreach (var item in Model.items)
+        {
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>@item.Title</td>
+                <td>@item.DueAt</td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+
