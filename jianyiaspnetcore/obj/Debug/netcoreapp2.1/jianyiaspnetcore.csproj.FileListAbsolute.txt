@@ -5,7 +5,6 @@ E:\其它\jianyiaspnetcore\jianyiaspnetcore\bin\Debug\netcoreapp2.1\jianyiaspnet
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\bin\Debug\netcoreapp2.1\jianyiaspnetcore.pdb
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\bin\Debug\netcoreapp2.1\jianyiaspnetcore.Views.dll
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\bin\Debug\netcoreapp2.1\jianyiaspnetcore.Views.pdb
-E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.csprojAssemblyReference.cache
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.csproj.CoreCompileInputs.cache
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.RazorAssemblyInfo.cache
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.RazorAssemblyInfo.cs
