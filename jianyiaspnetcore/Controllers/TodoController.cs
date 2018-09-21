@@ -2,15 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using jianyiaspnetcore.Models;
+using jianyiaspnetcore.Servers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace jianyiaspnetcore.Controllers
 {
     public class TodoController : Controller
-    { 
-        public IActionResult Index()
+    {
+        private readonly ITodoItemService _todoItemService;
+
+        public TodoController(ITodoItemService todoItemService)
         {
-            return View();
+            _todoItemService = todoItemService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var item = await _todoItemService.GetIncompleteItemsAsync();
+
+            var model = new TodoViewModel
+            {
+                Items = item
+            };
+            return View(model);
         }
     }
 }
