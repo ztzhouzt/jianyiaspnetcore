@@ -31,3 +31,4 @@ E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnet
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.csproj.CopyComplete
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\Razor\Views\Todo\Index.g.cshtml.cs
 E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\jianyiaspnetcore.csprojAssemblyReference.cache
+E:\其它\jianyiaspnetcore\jianyiaspnetcore\obj\Debug\netcoreapp2.1\Razor\Views\Todo\AddItemPartial.g.cshtml.cs

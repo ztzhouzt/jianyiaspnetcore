@@ -8,6 +8,11 @@ namespace jianyiaspnetcore.Servers
 {
     public class FakeTodoItemService : ITodoItemService
     {
+        public Task<bool> AddItemAsync(TodoItem newItem)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<TodoItem[]> GetIncompleteItemsAsync()
         {
             var item1 = new TodoItem

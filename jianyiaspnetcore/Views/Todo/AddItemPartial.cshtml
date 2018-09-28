@@ -1,0 +1,7 @@
+﻿@model TodoItem
+
+<form asp-action="AddItem" method="post">
+    <label asp-for="Title">添加待办事项：</label>
+    <input asp-for="Title"/>
+    <button type="submit">保存</button>
+</form>

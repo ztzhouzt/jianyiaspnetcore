@@ -27,5 +27,25 @@ namespace jianyiaspnetcore.Controllers
             };
             return View(model);
         }
+
+        /// <summary>
+        /// 添加待办事项
+        /// </summary>
+        /// <param name="newItem"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> AddItem(TodoItem newItem)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var successful = await _todoItemService.AddItemAsync(newItem);
+            if (!successful)
+            {
+                return BadRequest(new { error = "Could not add item." });
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
