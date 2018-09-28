@@ -16,10 +16,10 @@ namespace jianyiaspnetcore.Servers
             _context = context;
         }
 
-        public async Task<TodoItem[]> GetIncompleteItemsAsync()
+        public async Task<TodoItem[]> GetIncompleteItemsAsync(ApplicationUser user)
         {
             var items = await _context.items
-                .Where(x => x.IsDon == false)
+                .Where(x => x.IsDon == false && x.UserId == user.Id)
                 .ToArrayAsync();
 
             return items;
@@ -30,12 +30,12 @@ namespace jianyiaspnetcore.Servers
         /// </summary>
         /// <param name="newItem"></param>
         /// <returns></returns>
-        public async Task<bool> AddItemAsync(TodoItem newItem)
+        public async Task<bool> AddItemAsync(TodoItem newItem,ApplicationUser user)
         {
             newItem.Id = Guid.NewGuid();
             newItem.IsDon = false;
             newItem.DueAt = DateTimeOffset.Now.AddDays(3);
-
+            newItem.UserId = user.Id;
             _context.items.Add(newItem);
 
             var saveResult = await _context.SaveChangesAsync();

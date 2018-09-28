@@ -16,6 +16,11 @@ namespace jianyiaspnetcore.Models
         public Guid Id { get; set; }
 
         /// <summary>
+        /// 用户id
+        /// </summary>
+        public string UserId { get; set; }
+
+        /// <summary>
         /// 该事项是否已完成
         /// </summary>
         public bool IsDon { get; set; }
